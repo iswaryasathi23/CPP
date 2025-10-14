@@ -1,0 +1,32 @@
+#include <iostream> 
+using namespace std; 
+void swap(int &x, int &y) { 
+    int temp = x; 
+    x = y; 
+    y = temp; 
+} 
+int main() { 
+    cout << "Roll No: 24B11386" << endl; 
+    int a = 60; 
+    int b = 70; 
+cout << "Before swap: a = " << a << " b = " << b << endl; 
+    swap(a, b); 
+    cout << "After swap: a = " << a << " b = " << b << endl; 
+    return 0; 
+}
+#include <iostream> 
+using namespace std; 
+void swap(int *a, int *b) { 
+int temp = *a; 
+*a = *b; 
+*b = temp; 
+}
+int main() { 
+    cout << "Roll No: 24B11386" << endl; 
+int x = 7; 
+int y = 30; 
+cout << "Before swap: x = " << x << " , y = " << y << endl; 
+swap(&x, &y); 
+cout << "After swap: x = " << x << ", y = " << y << endl; 
+return 0; 
+}
